@@ -1,6 +1,7 @@
-# galera_cluster
-### 8. **Menggunakan SST dengan `xtrabackup`**
-1. Pastikan Anda telah menginstal `percona-xtrabackup`:
+# galera_cluster dgn xtrabackup
+### Menggunakan SST dengan `xtrabackup`
+pastikan mariadb sudah running dgn baik
+1. menginstal `percona-xtrabackup`:
    ```bash
    apt install -y percona-xtrabackup
    ```
