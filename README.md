@@ -26,7 +26,14 @@ wsrep_provider_options="gcs.fc_limit=140; gcs.fc_factor=0.8"
 wsrep_notify_cmd = notify
 wsrep_sst_method = xtrabackup
 ```
-
+### Jika memiliki banyak server, tinggal bagian ini:
+```code
+wsrep_cluster_address="gcomm://IP_Server1, IP_Server2, IP_Server2, dst..."
+```
+dan :
+```code
+wsrep_node_address="IP_Server_MariaDB"
+```
 ---
 Kesalahan ini menunjukkan bahwa MariaDB mencoba menjalankan perintah `notify`, tetapi perintah tersebut tidak ditemukan di sistem Anda. Kesalahan ini sering terkait dengan parameter `wsrep_notify_cmd` di konfigurasi MariaDB yang mengatur perintah untuk notifikasi status Galera Cluster.
 
